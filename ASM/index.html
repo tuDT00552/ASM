@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>MyTube</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link REL="SHORTCUT ICON" HREF="img/img.ico">
+</head>
+<body>
+	<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+	        <div class="navbar-header">
+	        	<a id="menu-toggle" href="#" class="navbar-brand">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+		        </a>
+	            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-piggy-bank"></span> Éc Túp</a>
+	        </div>
+	        <ul class="nav navbar-nav">
+	            <li id="activeh" onclick="activeh()"><a href="#!home">Home</a></li>
+	            <li><a href="#!playlist">Playlist</a></li>
+	            <li id="activep" onclick="activep()"><a href="#!login">Login</a></li>
+	            <li id="activepp" onclick="activepp()"><a href="#!res">Register</a></li>
+	        </ul>
+	        <form class="navbar-form navbar-right search-form" role="search">
+                <input id="inputsearch" type="text" class="form-control" placeholder="Search Video" value="" />
+                <button id="btn">Nút</button>
+            </form>
+        </div>
+    </div>
+   	<div id="wrapper">
+    	<div id="sidebar-wrapper">
+	        <div id="spy">
+	            <ul class="sidebar-nav nav">
+	                <li class="sidebar-brand">
+	                	
+	                    <a href="#!home"><span class="fa fa-home solo">Home</span></a>
+	                </li>
+	                <li>
+	                    <a href="#anch1">
+	                        <span class="fa fa-anchor solo">Anchor 1</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#anch2">
+	                        <span class="fa fa-anchor solo">Anchor 2</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#anch3">
+	                        <span class="fa fa-anchor solo">Anchor 3</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#anch4">
+	                        <span class="fa fa-anchor solo">Anchor 4</span>
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+		</div> 
+	    <div class="ng-view">
+	    	
+	    </div>
+	    <div id="my-content">
+	
+		</div>
+	</div>
+
+
+	
+  	<!-- **************************************** -->
+  	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jq-scr.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>
